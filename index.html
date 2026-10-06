@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,18 @@
 
         <div id="system-time">7:43 PM</div>
     </div>
-
+    
+    <div id="clock-window" class="app-window">
+        <div id="clock-title" class="window-title">Clock</div>
+        <button id="clock-close" class="window-close">×</button>
+        <div id="clock-display">12:00</div>
+        <div id="clock-date">Monday, January 1</div>
+    </div>
+    <div id="notes-window" class="app-window">
+        <button class="window-close">×</button>
+        <div class="window-title">Notes</div>
+        <textarea id="notes-text" placeholder="Start typing..."></textarea>
+    </div>
     <div id="dock">
         <div class="dock-icon files">
             <img src="assets/icons/files.svg" alt="Files">
@@ -41,7 +52,7 @@
             <img src="assets/icons/settings.svg" alt="Settings">
         </div>
 
-        <div class="dock-icon clock">
+        <div id="clock-icon" class="dock-icon clock">
             <img src="assets/icons/clock.svg" alt="Clock">
         </div>
 
@@ -51,6 +62,17 @@
     </div>
 
     </div>
+
+    <script src="script.js"></script>
+    <script src="apps/notes.js"></script>
+    <script src="apps/clock.js"></script>
+
+</body>
+<html>
+
+
+
+
 
     <script src="script.js"></script>
 
